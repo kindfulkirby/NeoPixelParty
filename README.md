@@ -1,7 +1,7 @@
 NeoPixelParty
 =============
 
-NeoPixelParty (c) 2015 [Tobias Theuer](theuer@hardbop.org).
+NeoPixelParty (c) 2015 Tobias Theuer.
 Licensed under LPGL3.
 
 Based on Adafruit's NeoPixel demo 'strandtest.ino' under LGPL3.
