@@ -3,9 +3,14 @@ NeoPixelParty
 
 NeoPixelParty (c) 2015 Tobias Theuer.
 Licensed under LPGL3.
+ 
+Requires [Adafruit NeoPixel Library](https://github.com/adafruit/Adafruit_NeoPixel).
 
-Based on Adafruit's NeoPixel demo 'strandtest.ino' under LGPL3.
-Using [Adafruit NeoPixel Library](https://github.com/adafruit/Adafruit_NeoPixel) under LGPL3.
+Based on Adafruit's NeoPixel demo 'strandtest.ino' under LGPL3. 
+
+## Building
+
+Make sure you have the [Adafruit NeoPixel Library](https://github.com/adafruit/Adafruit_NeoPixel) in your Arduino IDE, clone this repository and click "Upload".
 
 ## Usage
 Upload this sketch to an Arduino compatible board (we used a Adafruit Trinket) to which one or more Neopixels are
