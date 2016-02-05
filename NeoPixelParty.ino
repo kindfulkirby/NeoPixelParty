@@ -307,21 +307,21 @@ void chasingRainbowsReverse() {
 
 void theaterChase(uint32_t c, byte factor) {
 
-    factor = factor + 1;
+    factor = factor + 1; // factor 1: Every 4th pixel, factor 2: Every 8th pixel, etc.
 
     START_TIMER();
 
     while (true) {
         for (int q = 0; q < 4 * factor; q++) {
             for (int i = 0; i < STRIP_LENGTH; i = i + 4 * factor) {
-                strip.setPixelColor(i + q, c);  //turn every fourth pixel on
+                strip.setPixelColor(i + q, c);  //turn every fourth (or eighth) pixel on
             }
             strip.show();
 
             delay(FRAME_LENGTH_MS);
 
             for (int i = 0; i < STRIP_LENGTH; i = i + 4 * factor) {
-                strip.setPixelColor(i + q, 0);      //turn every fourth pixel off
+                strip.setPixelColor(i + q, 0);      //turn every fourth (or eighth) pixel off
             }
 
             CHECK_TIMER();
@@ -331,21 +331,21 @@ void theaterChase(uint32_t c, byte factor) {
 
 void theaterChaseReverse(uint32_t c, byte factor) {
 
-    factor = factor + 1;
+    factor = factor + 1; // factor 1: Every 4th pixel, factor 2: Every 8th pixel, etc.
 
     START_TIMER();
 
     while (true) {
         for (int q = 4 * factor; q > 0; q--) {
             for (int i = 0; i < STRIP_LENGTH; i = i + 4 * factor) {
-                strip.setPixelColor(i + q - 1, c);  //turn every fourth pixel on
+                strip.setPixelColor(i + q - 1, c);  //turn every fourth (or eighth) pixel on
             }
             strip.show();
 
             delay(FRAME_LENGTH_MS);
 
             for (int i = 0; i < STRIP_LENGTH; i = i + 4 * factor) {
-                strip.setPixelColor(i + q - 1, 0);      //turn every fourth pixel off
+                strip.setPixelColor(i + q - 1, 0);      //turn every fourth (or eighth) pixel off
             }
 
             CHECK_TIMER();
