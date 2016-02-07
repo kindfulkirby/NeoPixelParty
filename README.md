@@ -22,6 +22,8 @@ it loses power.
 Edit the `#define`s in the `CONSTANTS` section of the source code.
 Specifically of interest might be `STRIP_LENGTH`, which is the number of LEDs, and `PATTERN_LENGTH_MS`, which is how many milliseconds a pattern is active before the next one is called.
 
+Depending on the LEDs that you use, you might also have to change `strip` variable definition in the `GLOBAL VARIABLES` section. See the accompanying comment to find out which flags you have to set.
+
 ## Building
 
 Make sure you have the [Adafruit NeoPixel Library](https://github.com/adafruit/Adafruit_NeoPixel) in your Arduino IDE, clone and open this repository and click "Upload".
